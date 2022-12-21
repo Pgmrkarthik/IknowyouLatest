@@ -1,0 +1,14 @@
+.defaultBar{
+    width:200px;
+    position:relative;
+    background:lavender;
+    height:10px;
+    border-radius: 12px;
+    }
+    .progressBar{
+    position:absolute;
+    height:10px;
+    background:#f203fae3;
+    width:0px;
+    border-radius: 12px;
+    }

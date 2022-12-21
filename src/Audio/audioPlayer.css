@@ -1,0 +1,116 @@
+.player {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    background-color: #212527;
+  }
+  .player .song {
+    user-select: none;
+    margin: 0 20px;
+  }
+  .player .song .song__title {
+    text-align: left;
+    margin: 0;
+    color: white;
+    font-family: "Permanent Marker", cursive;
+    font-weight: normal;
+    font-size: 3.5em;
+  }
+  .player .song .song__title:hover {
+    color: greenyellow;
+  }
+  .player .song .song__artist {
+    margin: 0;
+    color: white;
+    font-family: "Rock Salt", cursive;
+    font-weight: normal;
+    font-size: 1em;
+  }
+  .player .song .song__artist:hover {
+    color: greenyellow;
+    cursor: pointer;
+  }
+  .player .controls {
+    flex-grow: 1;
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .player .player__button {
+    width: fit-content;
+    margin-bottom: 15px;
+    background-color: transparent;
+    border: none;
+  }
+  .player .player__button:focus {
+    outline: none;
+  }
+  .player .player__button:hover {
+    cursor: pointer;
+  }
+  .player .player__button:hover svg {
+    color: greenyellow;
+  }
+  .player .player__button svg {
+    font-size: 4em;
+    color: white;
+  }
+  .player .bar {
+    user-select: none;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .player .bar .bar__time {
+    color: white;
+    font-size: 16px;
+  }
+  .player .bar .bar__progress {
+    flex: 1;
+    border-radius: 5px;
+    margin: 0 20px;
+    height: 6px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  .player .bar .bar__progress .bar__progress__knob {
+    position: relative;
+    height: 10px;
+    width: 10px;
+    border: 1.5px solid white;
+    border-radius: 50%;
+    background-color: orange;
+  }
+
+  .player .bar .bar__progress .bar__progress__Marker {
+      position: relative;
+      opacity: 1;
+      height: 10px;
+      width: 10px;
+      background-color: rgb(255, 17, 0);
+      transition: opacity 0.2s ease;
+  }
+  @media screen and (max-width: 800px) {
+    .player {
+      flex-direction: column;
+    }
+    .player .controls {
+      width: 100%;
+      margin-top: 20px;
+    }
+    .player .bar {
+      width: 90%;
+    }
+  }
+  @media screen and (max-width: 500px) {
+    .player .song .song__title {
+      font-size: 2.5em;
+    }
+    .player .song .song__artist {
+      font-size: 0.8em;
+    }
+  }

@@ -1,0 +1,55 @@
+.bar {
+    user-select: none;
+    width: 13vw;
+    max-width: 200px;
+}
+.bar .bar__time {
+    color: white;
+    font-size: 16px;
+}
+.bar .bar__progress {
+    flex: 1;
+    border-radius: 5px;
+    display:flex;
+    margin: 0 0px;
+    height: 10px;
+    cursor: pointer;
+    color: #d551d4;
+}
+.bar .bar__progress .bar__progress__knob {
+    position: relative;
+    height: 16px;
+    width: 16px;
+    border: 1.5px solid white;
+    border-radius: 50%;
+    background-color: #d551d4;
+    display:flex;
+ 
+}
+
+/* .bar .bar__progress .bar__marker{
+    position: relative;
+    bottom:5px;
+    height: 20px;
+    width: 5px;
+    background-color: #fc0022;
+}
+
+.bar__marker_end{
+    flex: 1;
+    position: relative;
+    bottom:5px;
+    height: 20px;
+    width: 5px;
+    background-color: #000000;
+} */
+
+.bar__marker_start{
+    position: relative;
+    height: 20px;
+    width: 4px;
+    top:-5px;
+    
+    /* border-radius: 50%; */
+    background-color: #fc0022;
+}
